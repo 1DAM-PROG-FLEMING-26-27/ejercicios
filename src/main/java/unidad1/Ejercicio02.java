@@ -1,6 +1,6 @@
 package unidad1;
 
-public class Ejercicio2 {
+public class Ejercicio02 {
 
 	public static void main(String[] args) {
 		int a = 1;
@@ -9,7 +9,7 @@ public class Ejercicio2 {
 		int d = 4;
 		
 		boolean r1 = a < b || c != d;
-		boolean r2 = 
+//		boolean r2 = 
 	}
 
 }
