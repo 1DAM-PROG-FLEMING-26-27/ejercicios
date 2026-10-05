@@ -10,19 +10,20 @@ public class Ejercicio12 {
 		int numero = 0;
 		int contador = 0;
 		
-		if(maximo > 0) {
-			do {
-				int i = r.nextInt(900) + 100;
-				numero += i;
-				contador ++;
-			} while(numero<=maximo);
-			
-			System.out.println("Resultado de la suma: " + numero);
-			System.out.println("Cantidad de valores acumulados: "+ contador);
-		} else {
-			System.out.println("Has introducido un numero menor o igual a 0");
+		while (maximo <= 0) {
+			System.out.println("No has introducido un número mayor que cero.");
+			System.out.println("Introdúcelo de nuevo: ");
+			maximo = Integer.parseInt(IO.readln("Introduce un número entero mayor que 0: "));
 		}
 		
+		do {
+			int i = r.nextInt(900) + 100;
+			numero += i;
+			contador ++;
+		} while(numero<=maximo);
+		
+		System.out.println("Resultado de la suma: " + numero);
+		System.out.println("Cantidad de valores acumulados: "+ contador);
 	}
 
 }
