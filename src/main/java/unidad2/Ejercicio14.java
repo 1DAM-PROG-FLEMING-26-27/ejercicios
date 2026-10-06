@@ -7,7 +7,7 @@ public class Ejercicio14 {
 		int contador = 0;
 		float edadMedia;
 		int menoresDeEdad = 0;
-		Integer edad = leerEdad("Introduce la edad de un alumno: ")
+		Integer edad = leerEdad("Introduce la edad de un alumno: ");
 		while (edad != null) {
 				suma += edad;
 				contador++;
@@ -26,8 +26,10 @@ public class Ejercicio14 {
 		Integer edad = null;
 		String linea = IO.readln(mensaje);
 		while (!correcta) {
-			if (linea == null)
-				return null;
+			if (linea == null) {
+				edad = null;
+				correcta = true;
+			}
 			else
 				try {
 					edad = Integer.parseInt(linea);
