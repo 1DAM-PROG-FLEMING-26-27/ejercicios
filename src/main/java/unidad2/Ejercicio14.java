@@ -21,26 +21,6 @@ public class Ejercicio14 {
 		System.out.printf("Número de alumnos menores de edad: %d\n", menoresDeEdad);
 	}
 
-//	static Integer leerEdad(String mensaje) {
-//		boolean correcta = false;
-//		Integer edad = null;
-//		String linea = IO.readln(mensaje);
-//		while (!correcta) {
-//			if (linea == null) {
-//				edad = null;
-//				correcta = true;
-//			}
-//			else
-//				try {
-//					edad = Integer.parseInt(linea);
-//					correcta = true;
-//				} catch (NumberFormatException e) {
-//					linea = IO.readln("Edad incorrecta, introdúcela de nuevo: ");
-//				}
-//		}
-//		return edad;
-//	}
-
 	static Integer leerEdad(String mensaje) {
 		Integer edad = null;
 		String linea = IO.readln(mensaje);
