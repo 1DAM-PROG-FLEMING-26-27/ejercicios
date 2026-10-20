@@ -1,4 +1,4 @@
-package unidad3;
+package unidad3.strings;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
