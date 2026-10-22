@@ -9,7 +9,7 @@ public class Ejercicio01 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(
-				Ejercicio01.class.getResourceAsStream("../../secuencias.txt")));
+				Ejercicio01.class.getResourceAsStream("/secuencias.txt")));
 		Pattern p = Pattern.compile("ATG(?:[ACGT]{3})+(?:TAA|TAG|TGA)");
 		
 //		String linea = in.readLine();
