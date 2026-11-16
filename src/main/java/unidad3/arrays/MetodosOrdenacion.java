@@ -7,7 +7,8 @@ public class MetodosOrdenacion {
 	public static void main(String[] args) {
 		int [] v = {44, 55, 12, 42, 94, 18, 6, 67};
 		System.out.println(Arrays.toString(v));
-		insercionDirecta(v);
+//		insercionDirecta(v);
+		seleccionDirecta(v);
 		System.out.println(Arrays.toString(v));
 	}
 	
@@ -25,4 +26,29 @@ public class MetodosOrdenacion {
 		}
 	}
 	
+	public static void seleccionDirecta(int [] v) {
+	
+		for(int i = 0; i < v.length -1; i++) {
+			int min = i;
+			
+			for(int j = i + 1; j < v.length; j++) {
+				
+				if(v[min] > v[j]) {
+					min = j;				
+				}
+			}
+			
+			if(i != min) {
+				int aux = v[i];
+				
+				v[i]= v[min];
+				
+				v[min] = aux;
+			}
+			
+		
+		}
+	
+	}
 }
+	
